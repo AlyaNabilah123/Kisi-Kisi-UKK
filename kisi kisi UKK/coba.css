@@ -1,0 +1,15 @@
+body {
+    flex-direction: column;
+}
+
+.kiri {
+    background-color: aqua;
+    padding: 3px 3px 0;
+}
+
+.kanan {
+    background-color: aqua;
+}
+.main {
+    display: flex;
+}

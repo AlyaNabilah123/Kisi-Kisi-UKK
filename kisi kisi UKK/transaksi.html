@@ -1,0 +1,132 @@
+<!-- bahasa yang digunakan untuk membuat web -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link untuk menyambungkan css -->
+    <link rel="stylesheet" href="transaksi.css">
+    <title>Transaksi</title>
+</head>
+<body>
+    <!-- css untuk memuat semu konten -->
+    <div class="main">
+     <!-- navbar memberikan akses cepat kehalaman halaman lainnya-->
+    <nav class="navigasi">
+        <ul>
+            <li><a href="landing.html">Home</a></li>
+            <li><a href="transaksi.html">Transaksi</a></li>
+            <li class="kanan"><a href="login.html">Log Out</a></li>
+        </ul>
+    </nav>
+
+    <!-- class untuk konten tengah -->
+    <div class="content">
+        <!-- form untuk mengatur input, label dan ukuran konten tengah -->
+        <div class="form">
+            <!-- form-group untuk mengatur css input dan label -->
+        <div class="form-group">
+            <!-- label berisi tulisan diluar input -->
+            <label>No Transaksi</label>
+            <!-- input number untuk memasukkan nomor transaksi -->
+            <input type="number">
+        </div>
+        <div class="form-group">
+            <!-- label berisi tulisan diluar input -->
+            <label>Tanggal Transaksi</label>
+            <!-- input date untuk memasukkan tanggal transaksi -->
+            <input type="date">
+        </div>
+        <div class="form-group">
+            <!-- label berisi tulisan diluar input -->
+            <label>Nama Costumer</label>
+            <!-- input text untuk memasukkan nama costumer -->
+            <input type="text">
+        </div>
+        <div class="form-group">
+            <!-- label berisi tulisan diluar input -->
+            <label>Pilihan Paket</label>
+             <!-- input text untuk memasukkan pilihan paket -->
+            <input type="text">
+        </div>
+        <div class="form-group">
+            <!-- label berisi tulisan diluar input -->
+            <label>Harga Paket</label>
+             <!-- input number untuk memuat total harga barang yang telah dibeli total harga -->
+            <input type="number">
+            <!-- tombol button untuk menghitung total harga -->
+            <button class="btn">Hitung Total Harga</button>
+        </div>
+    </div>
+    <!-- konten sebelah kanan yang berisi kan input radio -->
+    <div class="form1">
+        <div class="form-kanan">
+            <!-- input radio berbentuk lingkaran untuk memuat tambahan produk -->
+            <input type="radio">
+            <!-- label berisi tulisan diluar input -->
+            <label>Tidak Ada Tambahan - Rp.0</label>
+        </div>
+        <div class="form-kanan">
+             <!-- input radio berbentuk lingkaran untuk memuat tambahan produk -->
+            <input type="radio">
+            <!-- label berisi tulisan diluar input -->
+            <label>Wax - Rp 10.000</label>
+        </div>
+        <div class="form-kanan">
+             <!-- input radio berbentuk lingkaran untuk memuat tambahan produk -->
+            <input type="radio">
+            <!-- label berisi tulisan diluar input -->
+            <label>Fogging - Rp 20.000</label>
+        </div>
+    </div>
+       </div>
+
+        <div class="konten-bawah">
+            <div class="form-group form-bawah">
+                <!-- label berisi tulisan diluar input -->
+                <label>Total Harga</label>
+                <!-- input text untuk melihat total harga yang telah dipilih -->
+                <input type="text">
+            </div>
+            <div class="form-group form-bawah">
+                <!-- label berisi tulisan diluar input -->
+                <label>Pembayaran</label>
+                <!-- input text untuk melihat hasil pembayaran paket -->
+                <input type="text">
+            <div class="form-group form-bawah kembali">
+                <!-- label berisi tulisan diluar input -->
+                <label>Kembalian</label>
+                <!-- input text untuk melihat total uang kembalian yang sudah dibayar -->
+                <input type="text">
+            </div>
+            </div>
+            <div class="form-group form-bawah">
+                <!-- tombol untuk menghitung kembalian -->
+                <button class="btn">Hitung Kembalian</button>
+                <!-- tombol untuk menyimpan transaksi -->
+                <a href="#popup"><button class="btn">Simpan Transaksi</button></a>
+            </div>
+        </div>       
+
+        <!-- pop up untuk transaksi berhasil -->
+        <div class="popup" id="popup">
+            <div class="pop-up">
+                <!-- text pop up yang muncul apabila tombol simpan transaksi diklik -->
+                <div class="pop-up-text">
+                    <p>Transaksi berhasil</p>
+                    <p>Kembali ke home</p>
+                </div>
+                <br>
+                <!-- tombol pop up untuk kembali ke home -->
+                <div class="pop-up-button">
+                    <a href="landing.html"><button>Ok</button></a>
+                </div>
+                </div>
+        </div>
+        <!-- konten bagian bawah biasanya berisi informasi -->             
+        <div class="footer">
+            <footer>@Copyright By Alya</footer>
+        </div>
+    </div>
+</body>
+</html>

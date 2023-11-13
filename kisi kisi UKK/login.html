@@ -1,0 +1,38 @@
+<!-- bahasa yang digunakan untuk membuat web -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link untuk menyambungkan CSS -->
+    <link rel="stylesheet" href="login-register.css" >
+    <title>Login</title>
+</head>
+<body>
+    <!-- box login berisi formulir untuk pengguna seperti username dan password-->
+    <div class="body-login">
+        <div class="logo">
+        <!-- gambar logo CarWash -->
+        <img src="logo.png">
+        <!-- text heading digunakan untuk konten teks, semakin tinggi angka semakin kecil ukuran teks-->
+        <h4>SELAMAT DATANG DI CAR WASH</br>
+            SMKN 2 BANJARMASIN
+        </h4>
+        </div>
+        <!-- input untuk memasukkan username pengguna -->
+        <div class="input-login">
+            <input type="text" class="input1" placeholder="Username" required>
+        </div> 
+        <!-- input untuk memasukkan password pengguna -->
+        <div class="input-login">
+            <input type="text" class="input1" placeholder="Password" required>
+        </div> 
+        <div class="btn">
+        <!-- tombol untuk masuk kehalaman daftar jika tidak mempunyai akun -->
+            <button onclick="location.href='register.html'">Register</button>
+        <!-- tombol untuk masuk kehalaman landing page jika sudah mempunyai akun -->
+            <button onclick="location.href='landing.html'" >Login</button>
+        </div>
+        </div>
+</body>
+</html>
